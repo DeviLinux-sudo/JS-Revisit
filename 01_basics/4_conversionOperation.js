@@ -88,3 +88,56 @@ console.log(booleanIsLoggedIn);
 let n = 33; 
 let StringOfn = String(n);
 console.log(typeof StringOfn);
+
+// ***********************Operations*************************************
+
+let value = 3;
+let negValue = -value;
+console.log(negValue);
+
+// Basic Operations
+
+// console.log(2+2); //Addition
+// console.log(2*2); //Multiplication
+// console.log(2-2); //Substraction
+// console.log(2**2); //Power
+// console.log(2/2); //Divide
+// console.log(2%2); //Modulus ( Remainder)
+
+let str1 = "Aarohi";
+let str2 = "Saxena";
+let str3 = str1 + str2;
+console.log(str3);
+
+// complex string situations
+
+/* if it starts with string then whole thing gets converted to string base ; if it starts with humber , then operation happens before and then string is attached */
+
+console.log("1" + 2); //12
+console.log(1+"2"); //12
+console.log("1" + 2 + 2); //122
+console.log(1+2+"2"); //32
+console.log(1+"2"+"2"); //122
+console.log(1+"2"+2); //122
+console.log(1+2+2); //5
+
+// conversions that doesnt make sense
+
+console.log(+true); //1
+console.log(+""); //0
+
+//Prefix and postfix Increment and decrement Operator 
+
+/* Postfix : x++ : the increment operator increments and returns the value before incrementing. */
+let x = 3;
+const y = x++;
+
+console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+
+/* Prefix : ++x : the increment operator increments and returns the value after incrementing. */
+let a = 3;
+const b = ++a;
+
+console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
