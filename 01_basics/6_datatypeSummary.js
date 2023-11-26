@@ -42,3 +42,25 @@ const bigNum = 38975689786n; //BigInt
 // console.log(typeof myFunction); //function , i.e object function
 
 // datatype of all primitive types are object only.
+
+// **********************About Memory Usage***************************
+
+// Stack (Primitive) Changes done on copy , Heap (Non-Primitive) Changes on done on Original value
+//Primitive
+let myName = "Aarohi"
+let newName = myName;
+newName = "Aarya"
+
+// console.log(myName) // stays same = "Aarohi"
+// console.log(newName) // "Aarya"
+
+//Non-Primitive
+let userOne = {
+    email : "arohis@xyz.com",
+    upi: "user1@ybl"
+}
+
+let userTwo = userOne;
+userTwo.email = "devili@abcd.com"
+// console.log(userOne.email); //devili@abcd.com
+// console.log(userTwo.email); //devili@abcd.com
