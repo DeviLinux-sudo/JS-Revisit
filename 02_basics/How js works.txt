@@ -1,0 +1,22 @@
+JavaScript Execution Context 
+
+1. Global Execution Context
+2. Function Execution Context
+3. Eval Execution Context
+
+Two Phases in which Javascript Code Runs 
+
+1. Memory Creation Phase 
+2. Execution Phase
+
+How a Javascript code is executed?
+
+1. Any Bigger or Smller code is run from Global Execution Context and is allocated under this
+2. Memory Creation phase : stores all variables and all variables and functions are undefined
+3. Execution Phase : Values of the variables are allocated
+Every Time new function is called;  a new varibale enviornment + execution Thread is allocated ; that is just like Global Scope , whole new enviornment is created for Local Scope and gets deleted when the it's work is done
+
+  3.0 Local Scope for function gets New Variable env + execution thread . So, 
+  3.1. Memory Phase : val1 ---> undefined ; val2 ---> undefined ; total ---> undefined 
+  3.2. Execution Context : values to val1 , val2 , total 
+
